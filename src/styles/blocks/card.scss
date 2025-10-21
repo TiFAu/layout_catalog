@@ -78,22 +78,27 @@
     min-height: 40px;
     min-width: 100%;
     text-decoration: none;
+    transition: $main-transition;
+    transition: $main-transition2;
+    transition: $main-transition3;
 
     &:hover {
-      background-color: $color-button-hover;
+      background-color: $color-button;
       border: 1px solid $color-button;
       border-radius: 5px;
-      color: $color-button;
+      color: $color-button-hover;
     }
-  }
-
-  &:hover &__name {
-    color: #34568b;
   }
 
   &:hover {
     transform: $main-transform;
+    transition: $main-transition2;
+    transition: $main-transition3;
     background-color: #fff;
     color: $color-button-hover;
+
+    &__name {
+      color: #34568b;
+    }
   }
 }

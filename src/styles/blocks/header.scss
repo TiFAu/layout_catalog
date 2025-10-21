@@ -1,6 +1,4 @@
 a {
-  color: #000;
-
   &.is-active {
     display: flex;
     color: $main-color;
@@ -58,14 +56,22 @@ a {
   &__item {
     position: relative;
   }
-}
 
-.is-active::after {
-  position: absolute;
-  content: '';
-  height: 4px;
-  width: 100%;
-  bottom: 0;
-  background-color: $main-color;
-  border-radius: 8px;
+  &__link {
+    color: $main-color;
+
+    &.is-active::after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      bottom: 0;
+      background-color: $main-color;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      color: $color-button-hover;
+    }
+  }
 }
