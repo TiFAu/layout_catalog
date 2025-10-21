@@ -12,6 +12,7 @@
   opacity: 1;
   padding: 16px;
   top: 1px;
+  transition: $main-transition;
   width: 200px;
 
   &__image {
@@ -88,5 +89,11 @@
 
   &:hover &__name {
     color: #34568b;
+  }
+
+  &:hover {
+    transform: $main-transform;
+    background-color: #fff;
+    color: $color-button-hover;
   }
 }
