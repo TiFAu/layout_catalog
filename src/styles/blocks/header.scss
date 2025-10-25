@@ -19,7 +19,7 @@ a {
 .header {
   grid-area: header;
 
-  background-color: #fff;
+  background-color: $white;
 
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@ a {
     }
 
     &:hover {
-      color: $color-button-hover;
+      color: $button-text;
     }
   }
 }

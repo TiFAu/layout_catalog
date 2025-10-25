@@ -24,37 +24,37 @@ a {
 
 .main {
   height: 100%;
-  padding: 50px 40px;
+  padding: $container-padding-vertical $container-padding-horizontal;
 
   grid-area: main;
   display: grid;
-  gap: 48px 46px;
+  gap: $gap-row $gap-col;
 }
 
 @media (min-width: 200px) {
   .main {
-    grid-template-columns: repeat(1, 200px);
+    grid-template-columns: repeat(1, $card-width);
     grid-template-rows: repeat(8, 408px);
   }
 }
 
 @media (min-width: 488px) {
   .main {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $card-width);
     grid-template-rows: repeat(4, 408px);
   }
 }
 
 @media (min-width: 768px) {
   .main {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $card-width);
     grid-template-rows: repeat(3, 408px);
   }
 }
 
 @media (min-width: 1024px) {
   .main {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $card-width);
     grid-template-rows: repeat(2, 408px);
   }
 }

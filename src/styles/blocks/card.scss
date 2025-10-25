@@ -13,7 +13,7 @@
   padding: 16px;
   top: 1px;
   transition: $main-transition;
-  width: 200px;
+  width: $card-width;
 
   &__image {
     margin: 16px 0;
@@ -69,7 +69,7 @@
 
   &__button-buy {
     align-items: center;
-    background-color: $color-button;
+    background-color: $button-bg;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -83,10 +83,10 @@
     transition: $main-transition3;
 
     &:hover {
-      background-color: $color-button;
-      border: 1px solid $color-button;
+      background-color: $white;
+      border: 1px solid $button-bg;
       border-radius: 5px;
-      color: $color-button-hover;
+      color: $button-text;
     }
   }
 
@@ -94,11 +94,10 @@
     transform: $main-transform;
     transition: $main-transition2;
     transition: $main-transition3;
-    background-color: #fff;
-    color: $color-button-hover;
+    color: $button-text;
 
     &__name {
-      color: #34568b;
+      color: $button-text;
     }
   }
 }
